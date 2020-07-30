@@ -45,7 +45,7 @@ function install-softether() {
 		sed -i.bak 's/cmake/cmake3/g' configure
 	fi
 	./configure || exit $?
-	cd tmp
+	cd build
 	make || exit $?
 	make install || exit $?
 }
