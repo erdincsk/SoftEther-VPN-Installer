@@ -51,16 +51,6 @@ function install-softether() {
 }
 install-softether
 
-## Check if firewalld is exist
-function check-firewalld() {
-	if [[ $(firewall-cmd --state) ]]; then
-		FIREWALLD_INSTALLED="true"
-		ZONE=$(firewall-cmd --get-default-zone)
-	else
-		FIREWALLD_INSTALLED="false"
-	fi
-}
-
 ## Set firewalld rules
 function set-firewalld-rules() {
 	if [ "$FIREWALLD_INSTALLED" == "true" ]; then
