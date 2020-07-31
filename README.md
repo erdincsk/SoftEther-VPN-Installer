@@ -12,7 +12,9 @@ Supports: SoftEther, OpenVPN, IPSEC / L2TP, SSTP, User Management, User Statisti
 SoftEther VPN Installer for CentOS &amp; Ubuntu, etc
 
 ## Instruction
-Run the following one line on your command prompt:
+1 - sudo apt install firewalld
+
+2- Run the following one line on your command prompt:
 ```sh
 bash <(curl -s https://raw.githubusercontent.com/erdincsk/SoftEther-VPN-Installer/master/softether-installer.sh)
 ```
