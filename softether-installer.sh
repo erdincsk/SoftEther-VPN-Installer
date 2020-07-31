@@ -60,7 +60,6 @@ function check-firewalld() {
 		FIREWALLD_INSTALLED="false"
 	fi
 }
-check-firewalld
 
 ## Set firewalld rules
 function set-firewalld-rules() {
