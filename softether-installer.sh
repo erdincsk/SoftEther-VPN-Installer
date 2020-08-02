@@ -78,7 +78,6 @@ set-firewalld-rules
 
 systemctl daemon-reload
 systemctl enable softether-vpnserver
-systemctl start softether-vpnserver
 systemctl status softether-vpnserver
 echo ""
 echo "Finished Installation! Please read this page for further information:"
